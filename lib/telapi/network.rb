@@ -35,7 +35,8 @@ module Telapi
             :username => (Telapi.config.account_sid || raise(InvalidConfiguration, 'account_sid')),
             :password => (Telapi.config.auth_token  || raise(InvalidConfiguration, 'auth_token'))
           },
-          :ssl_ca_path => Telapi.config.ssl_ca_path
+          :ssl_ca_path => Telapi.config.ssl_ca_path,
+          :ssl_ca_file => Telapi.config.ssl_ca_file
         }
       end
 

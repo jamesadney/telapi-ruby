@@ -6,6 +6,7 @@ module Telapi
       super(
         :base_uri    => 'https://api.telapi.com/2011-07-01',
         :ssl_ca_path => '/etc/ssl/certs',
+        :ssl_ca_file => nil,
         :account_sid => nil,
         :auth_token  => nil
       )
